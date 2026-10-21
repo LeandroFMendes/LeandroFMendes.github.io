@@ -1,7 +1,7 @@
 // Preencha antes de publicar. Canais vazios não aparecem no site.
 const email = "leandromendes.92@hotmail.com";
-const linkedin = "https://br.linkedin.com/"; // exemplo: "https://www.linkedin.com/in/seu-perfil"
-const github = "https://github.com/seu-usuario"; // exemplo: "https://github.com/seu-usuario"
+const linkedin = "https://www.linkedin.com/in/leandrofmendes/"; // exemplo: "https://www.linkedin.com/in/seu-perfil"
+const github = "https://github.com/LeandroFMendes"; // exemplo: "https://github.com/seu-usuario"
 
 export type Canal = {
   rotulo: string;
