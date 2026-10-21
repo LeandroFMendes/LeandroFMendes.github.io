@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Technologies from "@/components/Technologies";
+import { exibirProjetos } from "@/data/site";
 
 export default function Home() {
   return (
@@ -28,21 +29,23 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
-              href="#projetos"
-              className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-accent/85"
-            >
-              Conhecer os projetos
-            </a>
-            <a
               href="#contato"
-              className="rounded-md border border-line px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-accent-soft hover:text-accent-soft"
+              className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-ink transition-colors hover:bg-accent/85"
             >
               Entrar em contato
             </a>
+            {exibirProjetos && (
+              <a
+                href="#projetos"
+                className="rounded-md border border-line px-6 py-3 text-sm font-medium text-ink transition-colors hover:border-accent-soft hover:text-accent-soft"
+              >
+                Conhecer os projetos
+              </a>
+            )}
           </div>
         </section>
 
-        <Projects />
+        {exibirProjetos && <Projects />}
         <Technologies />
         <About />
         <Contact />

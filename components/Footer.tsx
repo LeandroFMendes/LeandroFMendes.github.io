@@ -1,8 +1,9 @@
 import Logo from "@/components/Logo";
 import { canais } from "@/data/contact";
+import { exibirProjetos } from "@/data/site";
 
 const navegacao = [
-  { href: "#projetos", label: "Projetos" },
+  ...(exibirProjetos ? [{ href: "#projetos", label: "Projetos" }] : []),
   { href: "#tecnologias", label: "Tecnologias" },
   { href: "#sobre", label: "Sobre" },
   { href: "#contato", label: "Contato" },

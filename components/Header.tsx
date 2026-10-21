@@ -2,9 +2,10 @@
 
 import { useState } from "react";
 import Logo from "@/components/Logo";
+import { exibirProjetos } from "@/data/site";
 
 const links = [
-  { href: "#projetos", label: "Projetos" },
+  ...(exibirProjetos ? [{ href: "#projetos", label: "Projetos" }] : []),
   { href: "#tecnologias", label: "Tecnologias" },
   { href: "#sobre", label: "Sobre" },
 ];
